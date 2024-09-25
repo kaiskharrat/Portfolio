@@ -1,0 +1,52 @@
+<div id="contact" class="contact-container">
+    <h2 class="contact-title">Contact Me</h2>
+    <p class="contact-subtitle">Fill the form to get in touch with me</p>
+  
+    <div class="contact-form" >
+      <!-- Contact Info Section -->
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        <ul>
+          <li>
+            <a href="mailto:Kaiskharrat0@gmail.com" style="color: inherit; text-decoration: none;">
+              <i class="fas fa-envelope"></i> Kaiskharrat0&#64;gmail.com
+            </a>
+          </li>
+          
+          <!-- Phone - tel: initiates a phone call -->
+          <li>
+            <a href="tel:+21629536778" style="color: inherit; text-decoration: none;">
+              <i class="fas fa-phone"></i> +216 29536778
+            </a>
+          </li>
+          
+          <!-- Google Maps - opens the address in Google Maps -->
+          <li>
+            <a href="https://www.google.com/maps/search/?api=1&query=Gouvernorat+Sfax,+Tunisie" target="_blank" style="color: inherit; text-decoration: none;">
+              <i class="fas fa-map-marker-alt"></i> Gouvernorat Sfax, Tunisie
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Contact Form Section -->
+      <div class="contact-keep-in-touch">
+        <h3>Keep In Touch</h3>
+        <form (submit)="sendEmail($event)">
+          <div class="form-row">
+            <input type="text" name="first_name" placeholder="First name" required/>
+            <input type="text" name="last_name" placeholder="Last name" required/>
+          </div>
+          <div class="form-row">
+            <input type="email" name="email" placeholder="Email address" required/>
+            <input type="text" name="phone" placeholder="Phone number" required/>
+          </div>
+          <div class="form-row">
+            <textarea name="message" placeholder="Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-gradient">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

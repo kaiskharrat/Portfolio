@@ -1,0 +1,208 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+  }
+  
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: white !important;
+  }
+  
+  body.dark-mode a {
+    color: #9e9e9e !important;
+  }
+  
+  body.dark-mode a:hover, body.dark-mode a.active {
+    background: linear-gradient(90deg, #3394f4, #042a71); /* Gradient title color */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important; /* Make the title use gradient text */
+  }
+  
+  /* Dark Mode Navbar */
+  body.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+    color: white !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  }
+  /* Set the logo text (your name) to white */
+body.dark-mode .navbar-logo span {
+    color: white !important;
+  }
+  
+  /* Set the brush icon (assuming Font Awesome icon) to white */
+  body.dark-mode .navbar-logo i {
+    color: white !important;
+  }
+  
+  /* Set navigation link text color to white */
+  body.dark-mode .navbar-links a {
+    color: white !important;
+    transition: color 0.3s ease; /* Add smooth transition */
+  }
+  
+  /* Hover and active state - keep color purple for highlighting */
+  body.dark-mode .navbar-links a:hover,
+  body.dark-mode .navbar-links a.active {
+    background: linear-gradient(90deg, #3394f4, #0949c0); /* Gradient title color */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important; /* Make the title use gradient text */
+  } 
+  body.dark-mode .navbar-logo {
+    color: white !important;
+  }
+  
+  body.dark-mode .navbar-logo i {
+    color: #007bff !important; /* Blue logo icon */
+  }
+  
+  body.dark-mode .navbar-right .btn-gradient {
+    background:  linear-gradient(90deg, #042a71, #3394f4) !important;
+  }
+  
+  /* Dark Mode Social Icons */
+  body.dark-mode .navbar-social i {
+    color: white !important;
+    background-color: #333 !important;
+  }
+  
+  body.dark-mode .navbar-social i:hover {
+    background-color: #007bff !important;
+    color: white !important;
+  }
+  body.dark-mode .home-container {
+    background-color: #121212 !important;
+  }
+  
+  body.dark-mode .intro-section {
+    color: white !important; /* Text color in dark mode */
+  }
+  
+  body.dark-mode .greeting {
+    color: #bbb !important; /* Lighter color for greeting */
+  }
+  
+  body.dark-mode .name-highlight {
+    background: linear-gradient(90deg, #3394f4, #1f5fd4); /* Gradient title color */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important; /* Make the title use gradient text */
+  }
+  
+  body.dark-mode .title {
+    color: white !important; /* White for title in dark mode */
+  }
+  
+  body.dark-mode .description {
+    color: #ccc; /* Light color for description */
+  }
+  
+  body.dark-mode .location {
+    color: #999 !important; /* Slightly lighter color for location */
+  }
+  
+  body.dark-mode .stat-item h2 {
+    color: white !important; /* White for stat numbers */
+  }
+  
+  body.dark-mode .stat-item p {
+    color: #bbb !important; /* Light color for stat descriptions */
+  }
+
+/* Contact Form - Dark Mode */
+body.dark-mode .contact-container {
+    background-color: #1f1f1f !important; /* Background color for contact container */
+    color: white !important; /* Default text color in the contact section */
+    border-radius: 10px;
+}
+
+/* Dark Mode for Contact Title */
+body.dark-mode .contact-title {
+    background: linear-gradient(90deg, #3394f4, #042a71); /* Gradient title color */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important; /* Make the title use gradient text */
+}
+
+/* Dark Mode for Contact Subtitle */
+body.dark-mode .contact-subtitle {
+    color: #ccc !important; /* Light grey color for the subtitle */
+}
+body.dark-mode input, body.dark-mode textarea {
+    background-color: #1f1f1f !important;
+    color: white !important;
+    border: 1px solid #555 !important;
+}
+
+body.dark-mode input::placeholder, body.dark-mode textarea::placeholder {
+    color: #777 !important;
+}
+
+body.dark-mode button.btn-gradient {
+    background: linear-gradient(90deg, #3394f4, #042a71) !important;
+}
+
+body.dark-mode button.btn-gradient:hover {
+    background: linear-gradient(90deg, #042a71, #3394f4) !important;
+}
+ 
+  body.dark-mode .project-card {
+      background-color: #1f1f1f !important;
+      color: white !important;
+      border: 1px solid #333 !important;
+  }
+  
+  body.dark-mode .project-title {
+      color: #ffffff !important;
+  }
+  
+  body.dark-mode .project-description {
+      color: #bbb !important;
+  }
+
+/* Dark Mode for Logos */
+body.dark-mode .clients-logos img {
+    filter: brightness(0) invert(1) !important; /* Forces the logos to white */
+    transition: filter 0.3s ease;
+}
+
+/* Hover effect to make the logos a bit more visible on hover */
+body.dark-mode .clients-logos img:hover {
+    filter: brightness(1)  !important;
+}
+  /* Footer - Dark Mode */
+body.dark-mode footer {
+    background-color: #1f1f1f !important;
+    color: white !important;
+}
+
+ /* Dark Mode Styles */
+ body.dark-mode .footer {
+    background-color: #121212 !important;
+  }
+  
+  body.dark-mode .footer h2, body.dark-mode .footer h3 {
+    color: white !important;
+  }
+  
+  body.dark-mode .footer p, body.dark-mode .footer a, body.dark-mode .footer ul li {
+    color: #ddd !important;
+  }
+  
+  body.dark-mode .footer-social-icons i {
+    color: white !important;
+  }
+  
+  body.dark-mode .footer-social-icons i:hover {
+    color: #007bff !important;
+  }
+  
+  body.dark-mode .footer-bottom {
+    color: #ffffff !important;
+  }

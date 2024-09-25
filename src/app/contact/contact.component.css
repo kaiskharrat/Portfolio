@@ -1,0 +1,140 @@
+/* Container for the contact section */
+.contact-container {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  /* Title styling with gradient */
+  .contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #042a71, #3394f4);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Subtitle styling */
+  .contact-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Contact form container */
+  .contact-form {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form */
+  }
+  
+  /* Contact info styling */
+  .contact-info {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5rem;
+    color: #042a71;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info li i {
+    color: #3394f4;
+    margin-right: 10px;
+  }
+  
+  /* Contact form inputs and labels */
+  .contact-keep-in-touch {
+    flex: 1;
+  }
+  
+  .contact-keep-in-touch h3 {
+    font-size: 1.5rem;
+    color: #042a71;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  input, textarea {
+    width: 48%; /* Adjust width for two inputs in a row */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  textarea {
+    width: 100%; /* Textarea takes full width */
+    height: 100px;
+  }
+  
+  /* Button styling */
+  button.btn-gradient {
+    background: linear-gradient(90deg, #042a71, #3394f4);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.4s;
+  }
+  
+  button.btn-gradient:hover {
+    background: linear-gradient(90deg, #042a71, #3394f4);
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .contact-form {
+      flex-direction: column;
+      max-width: 100%; /* Form will take full width on small screens */
+    }
+  
+    .contact-info {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  
+    input, textarea {
+      width: 100%; /* Inputs take full width on mobile */
+    }
+  }
+  

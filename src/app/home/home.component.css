@@ -1,0 +1,177 @@
+/* Main container for the home section */
+#home {
+    margin-top: 0;
+    padding-top: 100px; /* This padding ensures the section starts below the navbar */
+}
+.home-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Introduction section */
+  .intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 50px;
+  }
+  
+  .intro-text {
+    flex: 1;
+  }
+  
+  .greeting {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .name-highlight {
+    background: linear-gradient(90deg, #042a71, #3394f4); /* Gradient colors */
+    -webkit-background-clip: text; /* Clip background to text */
+    background-clip: text;
+    color: transparent; /* Make the text color transparent to show the gradient */
+}
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 20px 0;
+  }
+  
+  .location {
+    font-size: 1rem;
+    color: #999;
+  }
+  
+  .profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-item h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .stat-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+
+
+
+
+/* Section Container */
+.clients-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  /* Header Styling with Gradient */
+  .clients-header {
+    margin-bottom: 30px;
+  }
+  
+  .clients-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    background: linear-gradient(90deg, #042a71, #3394f4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .clients-header p {
+    font-size: 1rem;
+    color: #777;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .clients-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+  }
+  
+  .clients-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Logo Container with Increased Spacing */
+  .clients-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px; /* Increased gap between the logos */
+  }
+  
+  .clients-logos img {
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s;
+    
+  }
+  
+  .clients-logos img:hover {
+    filter: none;
+    transform: scale(1.1);
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 768px) {
+    
+
+    #home {
+        
+        padding-top: 220px; /* This padding ensures the section starts below the navbar */
+    }
+    .clients-logos {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center logos */
+        gap: 0px;
+      }
+  
+      .clients-logos img {
+        flex-basis: 50%; /* Make each logo take 45% of the container */
+        margin: 10px; /* Add some margin for spacing */
+        max-width: 130px; /* Maintain a consistent max-width */
+   
+      }
+  }
+  

@@ -1,0 +1,125 @@
+/* Container for the project section */
+.projects-container {
+    text-align: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #042a71, #3394f4);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .projects-carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .projects-grid {
+    display: flex;
+    transition: transform 1s ease;
+    width: 100%; /* Flex container controls width */
+  }
+  
+  /* Project card styling */
+  .project-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 15px;
+    width: calc(25% - 30px); /* Ensure 4 cards show per view */
+    flex: 0 0 calc(25% - 30px);
+    transition: transform 0.3s ease;
+  }
+ 
+  .project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .project-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Pagination dots */
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .dot {
+    height: 10px; /* Smaller dots */
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+  }
+  
+  .dot.active {
+    background-color: #007bff; /* Active dot color */
+  }
+  
+  .projects-carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .projects-carousel {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Auto-scrolling every 10 seconds */
+  @keyframes auto-scroll {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-100%); } /* Moves full width to show next set */
+  }
+  
+  .projects-grid.auto-scroll {
+    animation: auto-scroll 20s infinite linear; /* 10 seconds per step */
+  }
+  /* Media queries for mobile view */
+@media (max-width: 768px) {
+    .projects-carousel {
+      overflow-x: auto; /* Allow horizontal scrolling */
+      display: flex;
+      scroll-snap-type: x mandatory; /* Enable snap scrolling */
+    }
+  
+    .projects-grid {
+      display: flex;
+      width: 100%; /* Use 100% width */
+      transition: none; /* Disable transitions on mobile for smooth scrolling */
+    }
+  
+    .project-card {
+      width: 100%; /* Show one project per row */
+      flex: 0 0 100%; /* Ensure that only one project is visible at a time */
+      scroll-snap-align: start; /* Snap alignment for smooth scrolling */
+      margin: 0; /* Remove horizontal margin */
+    }
+  
+    .carousel-dots {
+      display: none; /* Optionally hide the dots on mobile */
+    }
+  }
+  
